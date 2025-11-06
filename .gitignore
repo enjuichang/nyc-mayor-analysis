@@ -1,0 +1,106 @@
+# ------------------------------------------------------------
+# 🌐 Root .gitignore — NYC Mayor Analysis
+# Covers Node (Next.js), Python (FastAPI), Docker, macOS
+# ------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node / Next.js
+node_modules
+.next
+out
+dist
+build
+coverage
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# pnpm store
+.pnpm-store
+.pnpm-debug.log*
+
+# Tailwind
+*.css.map
+
+# FastAPI / Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+*.log
+.venv/
+venv/
+env/
+.env/
+poetry.lock
+*.pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Docker
+*.pid
+*.tar
+*.bak
+docker-compose.override.yml
+.dockerignore
+# Ignore Docker build cache volumes
+**/.docker-volume
+
+# IDEs / Editors
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+logs/
+tmp/
+temp/
+.cache/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Packages (monorepo)
+packages/*/node_modules
+apps/*/node_modules
+
+# Exclude secrets
+secrets.*
+*.pem
+*.key
+*.crt
+
+# Ignore Mapbox tokens if added accidentally
+mapbox_token*
+mapbox-*.json
+
+# ------------------------------------------------------------
+# End of file
+# ------------------------------------------------------------
+
